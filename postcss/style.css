@@ -1,3 +1,29 @@
 @import "base/normalize.css";
-@import "base/fonts.css";
 @import "base/global.css";
+@import "base/fonts.css";
+
+@import "abstract/mixin.css";
+@import "abstract/variables.css";
+
+@import "blocks/close-menu.css";
+@import "blocks/contacts.css";
+@import "blocks/editor.css";
+@import "blocks/features.css";
+@import "blocks/footer.css";
+@import "blocks/form.css";
+@import "blocks/likes.css";
+@import "blocks/logo.css";
+@import "blocks/main-contact.css";
+@import "blocks/main-nav.css";
+@import "blocks/map.css";
+@import "blocks/menu-btn.css";
+@import "blocks/page-footer.css";
+@import "blocks/page-header.css";
+@import "blocks/photo.css";
+@import "blocks/popup.css";
+@import "blocks/price.css";
+@import "blocks/reviews.css";
+@import "blocks/slider.css";
+@import "blocks/social-block.css";
+@import "blocks/social-icons.css";
+@import "blocks/stores.css";

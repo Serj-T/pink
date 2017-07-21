@@ -1,0 +1,45 @@
+.form {
+
+}
+.form__block {
+
+  &--action {
+
+  }
+  &--apps {
+    
+  }
+  &--contacts {
+    
+  }
+  &--names {
+    
+  }
+}
+.form__block-text {
+
+}
+.form__block-wrap {
+
+}
+.form__btn {
+
+}
+.form__checkbox {
+
+}
+.form__info {
+
+}
+.form__info-text {
+
+}
+.form__radio {
+
+}
+.form__title {
+
+}
+.form__warning {
+
+}

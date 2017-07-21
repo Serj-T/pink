@@ -1,0 +1,23 @@
+.popup {
+  &--fail {
+
+  }
+  &--fail-off {
+    
+  }
+  &--success {
+    
+  }
+  &--success-off {
+    
+  }
+}
+.popup__text {
+
+}
+.popup__title {
+
+}
+.popup__wrap {
+
+}
