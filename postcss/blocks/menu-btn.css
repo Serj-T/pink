@@ -1,3 +1,9 @@
 .menu-btn {
-  
+  @mixin btn-reset;
+  position: absolute;
+  top: -45px;
+  right: 20px;
+  background-color: red;
+    &--visible {
+  }
 }

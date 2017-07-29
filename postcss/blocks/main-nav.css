@@ -1,12 +1,25 @@
 .main-nav {
-  
-}
-.main-nav__item {
-  
-}
-.main-nav__list {
-  
+  position: relative;
+  margin-bottom: 395px;
+  &--open {
+    display: block;
+  }
 }
 .main-nav__wrap {
-  
+  display: block;
+  &--closed {
+    display: none;
+  }
+}
+.main-nav__list {
+  @mixin reset-ul;
+}
+.main-nav__item {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-top: 1px solid #485461;
+}
+.main-nav__item a {
+  text-transform: uppercase;
+  @mixin link-style;
 }

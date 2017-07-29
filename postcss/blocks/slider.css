@@ -1,8 +1,8 @@
 .slider {
-
+  
 }
 .slider__item {
-
+  margin: 0;
   &--first {
 
   }

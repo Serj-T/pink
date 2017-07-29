@@ -1,15 +1,24 @@
 .stores {
-
+  @mixin reset-ul;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  margin-bottom: 20px;
   &--play {
-
+    
   }
   &--win {
     
   }
 }
 .stores__icons {
-
+  width: 60px;
+  height: 60px;
+  background-color: red;
   &--apple {
-
+  }
+  &--play {
+  }
+  &--win {
   }
 }

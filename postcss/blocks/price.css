@@ -1,15 +1,29 @@
 .price {
-
+  overflow: hidden;
+  
   &--hit {
-
   }
 }
-.price__set {
-
-}
-.price__set_cost {
-
-}
 .price__wrap {
+  display: flex;
+}
+.price__table {
+  margin: 0 auto;
+  min-width: 280px;
+}
+.price__set {
+  padding: 21px;
+  background-color: $bg-color;
+  color: white;
+}
+.price__table {
+  
+}
+.price__set-name {
+  @mixin font-bold 18px, 24px;
+  text-transform: uppercase;
 
+}
+.price__set-cost {
+  @mixin font-light 24px, 30px;
 }

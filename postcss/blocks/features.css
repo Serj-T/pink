@@ -1,30 +1,30 @@
 .features {
-  
 }
 .features__header {
-  
 }
 .features__header-wrap {
-  
+  padding: 40px 20px;
 }
 .features__item {
-  
 }
 .features__item-text {
-  
 }
 .features__item-title {
-  
-}
-.features__item-title-title {
-  
+  @mixin font-bold 18px, 24px;
+  color: black;
 }
 .features__list {
-  
+  background-color: $bg-color-grey;
 }
 .features__list-wrap {
-  
+  @mixin reset-ul;
+  @mixin wrap;
+  padding-bottom: 300px;
+  text-align: center;
 }
 .features__promo-title {
-  
+  @mixin font-light 24px, 28px;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
 }

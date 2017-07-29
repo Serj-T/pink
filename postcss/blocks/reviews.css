@@ -1,8 +1,8 @@
 .reviews {
-  
+  text-align: center;
 }
 .reviews__author {
-  
+  @mixin font-bold 18px, 24px;
 }
 .reviews__text {
   

@@ -1,9 +1,8 @@
 @import "base/normalize.css";
-@import "base/global.css";
-@import "base/fonts.css";
-
-@import "abstract/mixin.css";
 @import "abstract/variables.css";
+@import "abstract/mixin.css";
+@import "base/fonts.css";
+@import "base/global.css";
 
 @import "blocks/close-menu.css";
 @import "blocks/contacts.css";
