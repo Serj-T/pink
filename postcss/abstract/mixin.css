@@ -41,7 +41,7 @@
   }
 }
 @define-mixin font-normal $font-size, $line-height {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: $font-size;

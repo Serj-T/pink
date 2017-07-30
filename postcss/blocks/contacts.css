@@ -1,6 +1,14 @@
 .contacts {
-  
 }
 .contacts__wrap {
-
+  text-align: center;
+}
+.contacts__title {
+  @mixin font-light 24px, 28px;
+  display: block;
+}
+.contacts__action {
+  @mixin font-bold 18px 24px;
+  display: block;
+  color: $text-color;
 }

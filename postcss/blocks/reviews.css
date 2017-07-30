@@ -5,8 +5,11 @@
   @mixin font-bold 18px, 24px;
 }
 .reviews__text {
-  
+  @mixin font-normal 14px, 30px;
+  color: $text-color;
 }
 .reviews__wrap {
-  
+  padding-top: 43px;
+  padding-right: 20px;
+  padding-left: 20px;
 }

@@ -103,64 +103,72 @@
 		<section class="price">
 			<div class="price__wrap slider">
 			<h2 class="visually-hidden">Прайс-лист</h2>
-			
+
 				<table class="price__table">
-					<caption class="price__set price__set--hit">
-						<b class="price__set-name">Стандарт</b></br>
-						<em class="price__set-cost">3,99 usd</em>
-					</caption>
-					<tr>
-						<th>Розовый фильтр</th>
-						<td>Да</td>
+					<tr class="price__row price__row--heading">
+						<td class="price__cell price__cell--heading price__cell--heading-desktop">
+							Empty
+						</td>
+						<td class="price__cell price__cell--heading price__cell--heading-budget">
+							<b class="price__set-name">Бюджет</b></br>
+							<em class="price__set-cost">1,99 usd</em>
+						</td>
+						<td class="price__cell price__cell--heading price__cell--heading-standart">
+							<b class="price__set-name">Стандарт</b></br>
+							<em class="price__set-cost">3,99 usd</em>
+						</td>
+						<td class="price__cell price__cell--heading price__cell--heading-premium">
+							<b class="price__set-name">Премиум</b></br> 	
+							<em class="price__set-cost">5,99 usd</em>
+						</td>
 					</tr>
-					<tr>
-						<th>Смайлики</th>
-						<td>Да</td>
+
+					<tr class="price__row">
+						<td class="price__cell price__cell--option-desktop">
+							Розовый фильтр
+						</td>
+						<td class="price__cell price__cell--budget price__cell--yes">
+							Розовый фильтр
+						</td>
+						<td class="price__cell price__cell--standart price__cell--yes">
+							Розовый фильтр
+						</td>
+						<td class="price__cell price__cell--premium price__cell--yes">
+							Розовый фильтр
+						</td>
 					</tr>
-					<tr>
-						<th>Комментарии</th>
-						<td>Нет</td>
+
+					<tr class="price__row">
+						<td class="price__cell price__cell--option-desktop">
+							Смайлики
+						</td>
+						<td class="price__cell price__cell--budget price__cell--no">
+							Смайлики
+						</td>
+						<td class="price__cell price__cell--standart price__cell--yes">
+							Смайлики
+						</td>
+						<td class="price__cell price__cell--premium price__cell--yes">
+							Смайлики
+						</td>
+					</tr>
+
+					<tr class="price__row">
+						<td class="price__cell price__cell--option-desktop">
+							Комментарии
+						</td>
+						<td class="price__cell price__cell--budget price__cell--no">
+							Комментарии
+						</td>
+						<td class="price__cell price__cell--standart price__cell--no">
+							Комментарии
+						</td>
+						<td class="price__cell price__cell--premium price__cell--yes">
+							Комментарии
+						</td>
 					</tr>
 				</table>
-				
-				<table class="price__table">
-					<caption class="price__set">
-						<b class="price__set-name">Бюджет</b></br>
-						<em class="price__set-cost">1,99 usd</em>
-					</caption>
-					<tr>
-						<th>Розовый фильтр</th>
-						<td>Да</td>
-					</tr>
-					<tr>
-						<th>Смайлики</th>
-						<td>Нет</td>
-					</tr>
-					<tr>
-						<th>Комментарии</th>
-						<td>Нет</td>
-					</tr>
-				</table>
-				
-				<table class="price__table">
-					<caption class="price__set">
-						<b class="price__set-name">Премиум</b></br> 	
-						<em class="price__set-cost">5,99 usd</em>
-					</caption>
-					<tr>
-						<th>Розовый фильтр</th>
-						<td>Да</td>
-					</tr>
-					<tr>
-						<th>Смайлики</th>
-						<td>Да</td>
-					</tr>
-					<tr>
-						<th>Комментарии</th>
-						<td>Да</td>
-					</tr>
-				</table>
-				
+
 			</div>
 		</section>
 		
@@ -168,16 +176,18 @@
 			<div class="contacts__wrap">
 				<h2 class="visually-hidden">Контакты</h2>
 				
-				<span class="page-footer__title">Остались вопросы? Свяжитесь с нами!</span>
-				<strong class="page-footer__action">Звоните</strong>
-				<a href="" class="page-footer__tel">+7 (812) 555-66-66</a>
-				<strong class="page-footer__action">Пишите</strong>
-				<a href="" class="page-footer_mail">mail@htmlacadstrongy.ru</a>
-				<strong class="page-footer__action">Приезжайте в гости</strong>
-				<span class="page-footer__address">ул. Большая Конюшенная, 19/8</span>
+				<span class="contacts__title">Остались вопросы? Свяжитесь с нами!</span>
+				<strong class="contacts__action">Звоните</strong>
+				<a href="tel:7 (812) 555-66-66" class="contacts__tel">+7 (812) 555-66-66</a>
+				<strong class="contacts__action">Пишите</strong>
+				<a href="mailto:mail@htmlacadstrongy.ru" class="contacts_mail">mail@htmlacadstrongy.ru</a>
+				<strong class="contacts__action">Приезжайте в гости</strong>
+				<span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
 				
 			</div>
-			<div class="map"></div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.602026480372!2d30.321309976754133!3d59.93874569719956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sIDE5Lzg!5e0!3m2!1sru!2sru!4v1501421022185" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
 			
 		</section>
 		
@@ -185,7 +195,6 @@
 	
 	<footer class="page-footer">
 		<div class="page-footer__wrap">
-			
 		</div>
 	</footer>
 </body>

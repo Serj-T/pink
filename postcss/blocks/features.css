@@ -5,7 +5,15 @@
 .features__header-wrap {
   padding: 40px 20px;
 }
+.features__list-wrap {
+  @mixin reset-ul;
+  @mixin wrap;
+  padding-top: 45px;
+  padding-bottom: 290px;
+  text-align: center;
+}
 .features__item {
+  margin-bottom: 27px;
 }
 .features__item-text {
 }
@@ -16,12 +24,7 @@
 .features__list {
   background-color: $bg-color-grey;
 }
-.features__list-wrap {
-  @mixin reset-ul;
-  @mixin wrap;
-  padding-bottom: 300px;
-  text-align: center;
-}
+
 .features__promo-title {
   @mixin font-light 24px, 28px;
   display: block;

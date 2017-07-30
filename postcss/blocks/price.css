@@ -1,29 +1,50 @@
 .price {
+  background-color: $bg-color-grey;
   overflow: hidden;
-  
-  &--hit {
-  }
 }
 .price__wrap {
   display: flex;
+  justify-content: center;
+  padding: 50px;
 }
 .price__table {
-  margin: 0 auto;
-  min-width: 280px;
+  position: relative;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-collapse: collapse;
+  background-color: white;
 }
-.price__set {
-  padding: 21px;
-  background-color: $bg-color;
-  color: white;
+.price__row {
+  &--heading {
+    padding: 21px;
+    background-color: $bg-color;
+    color: white;
+  }
 }
-.price__table {
-  
+.price__cell {
+  @mixin font-normal 14px, 30px;
+  min-width: 254px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  border: 2px solid #e5e5e5;
+  text-transform: uppercase;
+  &--heading {
+    padding: 18px 0;
+    text-align: center;
+  }
+  &--option-desktop {
+    display: none;
+  }
+  &--heading-desktop {
+    display: none;
+  }
 }
 .price__set-name {
   @mixin font-bold 18px, 24px;
   text-transform: uppercase;
-
 }
 .price__set-cost {
-  @mixin font-light 24px, 30px;
+  @mixin font-light 24px, 28px;
 }
