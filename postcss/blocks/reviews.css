@@ -9,7 +9,8 @@
   color: $text-color;
 }
 .reviews__wrap {
-  padding-top: 43px;
+  padding-top: 45px;
   padding-right: 20px;
+  padding-bottom: 39px;
   padding-left: 20px;
 }

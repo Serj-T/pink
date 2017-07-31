@@ -1,3 +1,8 @@
+@define-mixin wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+/* resets */
 @define-mixin btn-reset {
   display: block;
   padding: 0;
@@ -6,6 +11,17 @@
   background-color: transparent;
   cursor: pointer;
 }
+@define-mixin fieldset-reset {
+  border: none;
+  margin: 0;
+  padding: 0; 
+}
+@define-mixin reset-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* style */
 @define-mixin radiocheck-style {
   position: relative;
   padding-top: 15px;
@@ -15,15 +31,6 @@
   font-weight: bold;
   color: #000000;
   text-transform: none;
-}
-@define-mixin wrap {
-  width: 280px;
-  margin: 0 auto;
-}
-@define-mixin reset-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 @define-mixin link-style {
   display: block;
@@ -40,6 +47,10 @@
     color: rgba(210, 40, 86, 0.3);
   }
 }
+@define-mixin placeholder-style {
+  color: #000000;
+}
+/* fonts */
 @define-mixin font-normal $font-size, $line-height {
   font-family: "Open Sans";
   font-style: normal;
@@ -62,8 +73,9 @@
   line-height: $line-height;
 }
 
-// фиксирует и растягивает модальное окно до указанного $modal-width размера
-@define-mixin modal-fix($modal-width) {
+/* фиксирует и растягивает модальное окно до указанного 
+$modal-width размера */
+@define-mixin modal-fix $modal-width {
   display: block;
   position: fixed;
   top: 20%;
@@ -78,18 +90,3 @@
     margin-left: -($modal-width)/2;
   }
 }
-
-/* @define-mixin placeholder() {
-  &::-webkit-input-placeholder {
-    $content;
-  }
-  &:-moz-placeholder {
-    $content;
-  }
-  &::-moz-placeholder {
-    $content;
-  }
-  &:-ms-input-placeholder {
-    $content;
-  }
-} */

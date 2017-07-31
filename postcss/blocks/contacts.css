@@ -1,14 +1,28 @@
 .contacts {
 }
 .contacts__wrap {
+  padding-top: 43px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   text-align: center;
 }
 .contacts__title {
   @mixin font-light 24px, 28px;
   display: block;
+  margin-bottom: 35px;
 }
 .contacts__action {
   @mixin font-bold 18px 24px;
   display: block;
   color: $text-color;
+}
+.contacts__tel,
+.contacts_mail,
+.contacts__address {
+  @mixin font-light 24px, 28px;
+  display: block;
+  margin-bottom: 25px;
+  color: #d22856;
+  text-decoration: none;
 }

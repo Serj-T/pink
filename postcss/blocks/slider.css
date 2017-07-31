@@ -13,3 +13,10 @@
     
   }
 }
+.slider__controls {
+  width: 100px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 28px;
+  background-color: gray;
+}

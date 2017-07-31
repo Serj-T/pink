@@ -3,19 +3,23 @@
 .features__header {
 }
 .features__header-wrap {
-  padding: 40px 20px;
+  padding-top: 41px;
+  padding-right: 20px;
+  padding-bottom: 37px;
+  padding-left: 20px;
 }
 .features__list-wrap {
   @mixin reset-ul;
   @mixin wrap;
-  padding-top: 45px;
-  padding-bottom: 290px;
+  padding-top: 48px;
+  padding-bottom: 287px;
   text-align: center;
 }
 .features__item {
-  margin-bottom: 27px;
+  margin-bottom: 31px;
 }
 .features__item-text {
+  margin-top: 10px;
 }
 .features__item-title {
   @mixin font-bold 18px, 24px;
@@ -24,7 +28,6 @@
 .features__list {
   background-color: $bg-color-grey;
 }
-
 .features__promo-title {
   @mixin font-light 24px, 28px;
   display: block;

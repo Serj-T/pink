@@ -1,0 +1,36 @@
+.btn {
+  @mixin btn-reset;
+  @mixin link-style;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px 50px;
+  &--page-header {
+    color: white;
+    border: 3px solid white;
+  }
+  &--form {
+    width: 100%;  
+    color: #d22856;
+    border: 3px solid #d22856;
+  }
+  &:disabled {
+    color: #283645;
+    opacity: 0.1;
+  }
+  &--social {
+    width: 50px;
+    color: #283645;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+  }
+  &--social {
+    width: 50px;
+    color: #283645;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+  }
+  &--submit {
+    color: white;
+    border-radius: 3px;
+    background-color: #2aab6d;
+    text-transform: uppercase;
+  }
+}

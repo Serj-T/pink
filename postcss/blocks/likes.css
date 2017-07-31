@@ -1,12 +1,12 @@
 .likes {
-  
+  @mixin font-normal 12px, 24px;
+  color: #d22856;
+  text-transform: uppercase;
 }
 .likes__icon {
-  
 }
 .likes__sum {
-  
 }
 .likes__text {
-  
+  padding-left: 32px;
 }

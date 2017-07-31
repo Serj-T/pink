@@ -1,45 +1,118 @@
 .form {
-
 }
 .form__block {
-
   &--action {
-
   }
   &--apps {
-    
   }
   &--contacts {
-    
   }
   &--names {
-    
   }
 }
-.form__block-text {
-
-}
 .form__block-wrap {
-
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+  &--names {
+    padding-bottom: 27px;
+  }
+  &--actions {
+    padding-top: 36px;
+    padding-bottom: 2px;
+    background-color: #f2f2f2;
+  }
+  &--contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &--apps {
+    padding-top: 39px;
+    padding-bottom: 2px;
+    background-color: #f2f2f2;
+  }
+  &--comments {
+    padding-top: 56px;
+  }
+  &--submit {
+    padding-bottom: 19px;
+  }
+}
+.form__block-wrap legend,
+.form__block-text label {
+  @mixin font-normal 14px, 18px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.form__block-text label {
+  margin-left: 22px;
+}
+.form__block-text input,
+.form__block textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 63px;
+  margin-top: 8px;
+  margin-bottom: 19px;
+  padding-left: 20px;
+  border: 2px solid #e5e5e5;
+  @mixin font-normal 18px, 30px;
+  &::placeholder {
+    @mixin font-normal 18px, 30px;
+    color: #283645;
+  }
+}
+.form__block textarea {
+  margin-bottom: 48px;
+  padding-top: 13px;
+}
+.form__checkbox label,
+.form__radio label {
+  @mixin font-normal 18px, 30px;
+  display: block;
+  margin-bottom: 52px;
+  padding-left: 70px;
+}
+.form__radio label {
+  margin-bottom: 45px;
+}
+.form__checkbox input,
+.form__radio input {
+  display: none;
 }
 .form__btn {
-
-}
-.form__checkbox {
-
-}
-.form__info {
-
-}
-.form__info-text {
-
-}
-.form__radio {
-
-}
-.form__title {
-
+  min-height: 63px;
+  margin-bottom: 37px;
 }
 .form__warning {
-
+  text-transform: uppercase;
+  text-align: center;
+}
+.form__warning span {
+  color: #d22856;
+}
+.form__checkbox {
+}
+.form__info {
+}
+.form__info-text {
+}
+.form__radio {
+}
+.form__title {
+  text-align: center;
+  &--actions {
+    width: 230px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 43px;
+    margin-left: auto;
+  }
+  &--apps {
+    margin-bottom: 40px;
+  }
+  &--comments {
+    margin-bottom: 10px;
+  }
 }

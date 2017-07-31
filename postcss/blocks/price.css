@@ -1,11 +1,13 @@
 .price {
   background-color: $bg-color-grey;
   overflow: hidden;
+  padding-bottom: 43px;
 }
 .price__wrap {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding-top: 89px;
+  padding-bottom: 10px;
 }
 .price__table {
   position: relative;

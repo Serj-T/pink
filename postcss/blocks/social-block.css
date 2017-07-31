@@ -1,6 +1,10 @@
 .social-block {
-  
+  margin-top: 20px;
+  margin-bottom: 36px;
 }
 .social-block__wrap {
-  
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+  margin: 0 auto;
 }

@@ -1,0 +1,16 @@
+.main-text {
+  @mixin font-normal 14px, 30px;
+  width: 254px;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom: 42px;
+  text-align: center;
+  &--first {
+    width: 246px;
+    margin-bottom: 48px;
+  }
+  &--form {
+    width: 280px;
+    margin-bottom: 36px;
+  }
+}

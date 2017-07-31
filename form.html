@@ -28,7 +28,7 @@
 				</div>
 			</nav>
 			
-			<h1 class="page__header-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+			<h1 class="page__header-title page__header-title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
 			
 		</div>
 	</header>	
@@ -37,31 +37,29 @@
 		
 		<form action="https://echo.htmlacademy.ru" class="form" method="post">
 			
-			<div class="form__info">
-				<p class="form__info-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-			</div>
+			<p class="main-text main-text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 			
 			<div class="form__block form__block--names">
-				<fieldset class="form__block-wrap">
+				<div class="form__block-wrap form__block-wrap--names">
 					<legend class="form__title visually-hidden">ФИО</legend>
 					<div class="form__block-text">
-						<label for="surname">Фамилия</label>
+						<label for="surname">Фамилия:</label>
 						<input type="text" id="surname" placeholder="Укажите фамилию" required>
 					</div>
 					<div class="form__block-text">
-						<label for="name">Имя</label>
+						<label for="name">Имя:</label>
 						<input type="text" id="name" placeholder="Введите ваше имя" required>
 					</div>
 					<div class="form__block-text">
-						<label for="patronymic">Отчество</label>
+						<label for="patronymic">Отчество:</label>
 						<input type="text" id="patronymic" placeholder="Ну и отчество тоже" required>
 					</div>
-				</fieldset>
+				</div>
 			</div>
 			
 			<div class="form__block form__block--actions">
-				<fieldset class="form__block-wrap">
-					<legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+				<div class="form__block-wrap form__block-wrap--actions">
+					<legend class="form__title form__title--actions">Ваши безбашенные достижения в путешествии</legend>
 					<div class="form__checkbox">
 						<input type="checkbox" id="shark" value="selfie" checked>
 						<label for="shark">Сделал селфи с акулой</label>
@@ -86,11 +84,11 @@
 						<input type="checkbox" id="hotel" value="destroy">
 						<label for="hotel">Разгромил отель</label>
 					</div>
-				</fieldset>
+				</div>
 			</div>
 			
 			<div class="form__block form__block--contacts">
-				<fieldset class="form__block-wrap">
+				<div class="form__block-wrap form__block-wrap--contacts">
 					<legend class="form__title visually-hidden">Ваши контакты</legend>
 					<div class="form__block-text">
 						<label for="tel">Номерок телефончика</label>
@@ -100,12 +98,12 @@
 						<label for="email">Адресок почты</label>
 						<input type="email" id="email" placeholder="Введите почту" required>
 					</div>
-				</fieldset>
+				</div>
 			</div>
 			
 			<div class="form__block form__block--apps">
-				<fieldset class="form__block-wrap">	
-					<legend class="form__title">С каким приложением путешествовали?</legend>
+				<div class="form__block-wrap form__block-wrap--apps">	
+					<legend class="form__title form__title--apps">С каким приложением путешествовали?</legend>
 					<div class="form__radio">
 						<input type="radio" id="ios" name="radio-app" checked>
 						<label for="ios">Pink для iOS</label>
@@ -118,66 +116,66 @@
 						<input type="radio" id="windows" name="radio-app">
 						<label for="windows">Windows Phone</label>
 					</div>
-				</fieldset>
+				</div>
 			</div>
 			
-			<div class="form__block">
-				<fieldset class="form__block-wrap">	
-					<legend class="form__title">Опишите свои эмоции</legend>
-					<textarea cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-				</fieldset>
+			<div class="form__block form__block--comments">
+				<div class="form__block-wrap form__block-wrap--comments">	
+					<legend class="form__title form__title--comments">Опишите свои эмоции</legend>
+					<textarea cols="30" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+				</div>
 			</div>
 			
-			<div class="form__block">
-				<fieldset class="form__block-wrap">
+			<div class="form__block form__block--submit">
+				<div class="form__block-wrap form__block-wrap--submit">
 					<legend class="form__title visually-hidden">Отправить форму</legend>
-					<input type="submit" class="form__btn btn" value="Отправить форму">
-					<span class="form__warning"><sup>*</sup> — обязательные поля</span>
-				</fieldset>
+					<input type="submit" class="btn btn--submit form__btn" value="Отправить форму">
+					<span class="form__warning"><span>*</span> — обязательные поля</span>
+				</div>
 			</div>
 		</form>
 	</main>
 
 	<footer class="footer">
 		<div class="footer__wrap">
-
-			<div class="footer-logo">
+		
+			<a href="index.html" class="footer-logo">
 				<img src="#" alt="Pink">
-			</div>
-
+			</a>
+		
 			<div class="social-block">
 				<div class="social-block__wrap">
-					<a href="#" class="social-icons social-icons--tw" title="Twitter">Twitter</a>
-					<a href="#" class="social-icons social-icons--fb" title="Facebook">Facebook</a>
-					<a href="#" class="social-icons social-icons--utube" title="YouTube">YouTube</a>
+					<a href="#" class="btn btn--social social-icons social-icons--tw" title="Twitter">Twitter</a>
+					<a href="#" class="btn btn--social social-icons social-icons--fb" title="Facebook">Facebook</a>
+					<a href="#" class="btn btn--social social-icons social-icons--utube" title="YouTube">YouTube</a>
 				</div>
 			</div>
 			
 			<div class="footer__copyright">
-				<span>Разработано
-					<a href="https://htmlacadstrongy.ru" title="HTML Academy">HTML Academy</a>
-				</span>
+				<span>Разработано</span>
+				<a href="https://htmlacademy.ru" title="HTML Academy"></a>
 			</div>
 			
 		</div>
 	</footer>
 	
-	<div class="popup popup--fail popup--fail-off">
-		<div class="popup__wrap">
-			<b class="popup__title">Что-то пошло не так!</b>
-			<p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-			<button class="popup-btn btn">Ок</button>
-		</div>
+	<div class="modal  modal--error modal--error-on">
+	  <!-- Модальное окно открывается добавлением класса modal--error-on -->
+	  <div class="modal__wrap">
+	    <h2 class="modal__title  modal__title--error">Что-то пошло не так</h2>
+	    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их&nbsp;заполнить</p>
+	    <button class="btn modal__btn  modal__btn--error">OK</button>
+	  </div>
 	</div>
-	
-	<div class="popup popup--success popup--success-off">
-		<div class="popup__wrap">
-			<b class="popup__title">Ваша заявка отправлена</b>
-			<p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
-				оповестим вас.</p>
-				<button class="popup-btn btn">Закрыть окно</button>
-			</div>
-		</div>
+
+	<div class="modal  modal--success modal--success-on">
+	  <!-- Модальное окно открывается добавлением класса modal--success-on -->
+	  <div class="modal__wrap">
+	    <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+	    <p class="modal__text  modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+	    <button class="btn modal__btn  modal__btn--success">Закрыть окно</button>
+	  </div>
+	</div>
 
 	</body>
 	</html>

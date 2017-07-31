@@ -4,6 +4,7 @@
 @import "base/fonts.css";
 @import "base/global.css";
 
+@import "blocks/btn.css";
 @import "blocks/close-menu.css";
 @import "blocks/contacts.css";
 @import "blocks/editor.css";
@@ -14,12 +15,13 @@
 @import "blocks/logo.css";
 @import "blocks/main-contact.css";
 @import "blocks/main-nav.css";
+@import "blocks/main-text.css";
 @import "blocks/map.css";
 @import "blocks/menu-btn.css";
+@import "blocks/modal.css";
 @import "blocks/page-footer.css";
 @import "blocks/page-header.css";
 @import "blocks/photo.css";
-@import "blocks/popup.css";
 @import "blocks/price.css";
 @import "blocks/reviews.css";
 @import "blocks/slider.css";

@@ -1,27 +1,47 @@
 .editor {
-
+  background-color: #f2f2f2;
 }
 .editor__wrap {
-
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 .editor__image {
-
+  margin-bottom: 20px;
 }
-.editor__panel {
-
+.editor__image img{
+  display: block;
+  width: 280px;
+  height: 374px;
+}
+.editor__panel input[type="radio"] {
+  display: none;
+}
+.editor__icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  padding: 15px 20px;
+}
+.editor__icon {
+  width: 50px;
+  height: 50px;
+  background-color: red;
 }
 .editor__sets-btn {
-
   &--cancel {
-
   }
   &--colors {
-
   }
   &--contrast {
-    
   }
   &--submit {
-    
   }
+}
+.editor__btn {
+  padding-bottom: 20px;
+}
+.editor__btn-submit {
+  margin-bottom: 12px;
 }

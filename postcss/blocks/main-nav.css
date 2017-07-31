@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  margin-bottom: 395px;
   &--open {
     display: block;
   }
