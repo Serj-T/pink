@@ -13,6 +13,9 @@
     
   }
 }
+.slider__item:nth-child(n+2) {
+  display: none;
+}
 .slider__controls {
   width: 100px;
   height: 20px;

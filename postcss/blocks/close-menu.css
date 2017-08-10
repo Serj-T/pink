@@ -1,6 +1,3 @@
 .close-menu {
-  @mixin btn-reset;
-  &--hidden {
-    display: none;
-  }
+  
 }

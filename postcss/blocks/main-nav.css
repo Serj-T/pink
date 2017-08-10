@@ -1,24 +1,72 @@
 .main-nav {
-  position: relative;
-  &--open {
-    display: block;
-  }
 }
 .main-nav__wrap {
-  display: block;
-  &--closed {
+  background-color: color(#000000 a(30%));
+  @media ($desktop-width) {
+    @mixin wrap-desktop;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.main-nav__header {
+  position: relative;
+  height: 44px;
+  @media ($mobile-width) {
+    @mixin wrap-mobile;
+    padding-top: 22px;
+  }
+  @media ($tablet-width) {
+    @mixin wrap-tablet;
+    min-height: 83px;
+    padding-top: 27px;
+  }
+}
+.main-nav__btn-toggle {
+  @mixin btn-reset;
+  position: absolute;
+  top: 25px;
+  right: 6.25%;
+  background-color: red;
+  @media ($tablet-width) {
+    top: 45px;
+    right: 5.71%;
+  }
+  @media ($desktop-width) {
     display: none;
   }
 }
 .main-nav__list {
   @mixin reset-ul;
+  display: none;
+  &--opened {
+    display: block;
+  }
+  @media ($desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
 }
 .main-nav__item {
   text-align: center;
-  border-bottom: 1px solid black;
   border-top: 1px solid #485461;
+  border-bottom: 1px solid black;
+  background-color: $bg-color;
+  @media ($desktop-width) {
+    border: none;
+    margin-left: 82px;
+    background-color: transparent;
+  }
 }
 .main-nav__item a {
   text-transform: uppercase;
   @mixin link-style;
+  @media ($tablet-width) {
+    @mixin link-style;
+  }
+  @media ($desktop-width) {
+    @mixin font-normal 18px, 110px;
+    text-transform: none;
+  }
 }

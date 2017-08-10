@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Конкурс на самое безбашенное путешествие с Пинк</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -9,22 +10,23 @@
 	<header class="page-header">
 		<div class="page-header__wrap">
 	 		
-			<div class="logo">
-				<a href="index.html">
-					<img src="#" alt="Pink">
-				</a>
-			</div>
-			
 			<nav class="main-nav">
-				<button href="#" class="menu-btn menu-btn--visible">Меню</button>
-				<button class="close-menu close-menu--hidden">Закрыть меню</button>
 				<div class="main-nav__wrap">
-					<ul class="main-nav__list">
+
+					<div class="main-nav__header">
+						<a class="logo" href="index.html">
+							<img src="index.html" alt="Pink">
+						</a>
+						<button class="main-nav__btn-toggle">Меню</button>
+					</div>
+
+					<ul class="main-nav__list main-nav__list--opened">
 						<li class="main-nav__item"><a href="index.html">Главная</a></li>
 						<li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
 						<li class="main-nav__item"><a href="form.html">Конкурс</a></li>
 						<li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
 					</ul>
+
 				</div>
 			</nav>
 			
@@ -176,6 +178,7 @@
 	    <button class="btn modal__btn  modal__btn--success">Закрыть окно</button>
 	  </div>
 	</div>
-
+	<script src="js/menu.js"></script>
+		
 	</body>
 	</html>

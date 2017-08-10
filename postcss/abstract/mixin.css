@@ -1,7 +1,38 @@
-@define-mixin wrap {
-  width: 280px;
+$mobile-width: (max-width: 699px);
+$tablet-width: ((min-width: 700px) and (max-width: 1199px));
+$desktop-width: (min-width: 1200px);
+
+@define-mixin wrap-mobile{
+  width: 87.5%;
   margin: 0 auto;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
 }
+@define-mixin wrap-tablet {
+  width: 88.57%;
+  margin: 0 auto;
+  padding-left: 5.71%;
+  padding-right: 5.71%;
+}
+@define-mixin wrap-desktop {
+  width: 78.34%;
+  margin: 0 auto;
+  padding-left: 10.83%;
+  padding-right: 10.83%;
+}
+
+@define-mixin wrap {
+  @media ($only-mobile) {
+    @mixin wrap-mobile;
+  }
+  @media ($tablet-width) {
+    @mixin wrap-tablet;
+  }
+  @media ($desktop-width) {
+    @mixin wrap-desktop;
+  }
+}
+
 /* resets */
 @define-mixin btn-reset {
   display: block;
